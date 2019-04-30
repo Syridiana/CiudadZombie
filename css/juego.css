@@ -17,3 +17,13 @@ canvas {
   font-family: monospace;
   visibility: hidden;
 }
+
+
+div#inicio {
+  width:  961px; 
+  height: 577px; 
+  background-image: url("../imagenes/Mensaje1.png");
+  margin: auto;
+  display: flex;
+  margin-top: -600px;
+}

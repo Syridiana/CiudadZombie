@@ -14,7 +14,6 @@ var Juego = {
   altoCanvas: 577,
   jugador: Jugador,
   vidasInicial: Jugador.vidas,
-  juegoIniciado: false,
   // Indica si el jugador gano
   ganador: false,
 
@@ -144,7 +143,7 @@ Juego.buclePrincipal = function() {
 Juego.update = function() {
   this.calcularAtaques();
   this.moverEnemigos();
-}
+};
 // Captura las teclas y si coincide con alguna de las flechas tiene que
 // hacer que el jugador principal se mueva
 Juego.capturarMovimiento = function(tecla) {
@@ -198,7 +197,7 @@ Juego.dibujar = function() {
   /* Aca hay que agregar la logica para poder dibujar al jugador principal
   utilizando al dibujante y los metodos que nos brinda.
   "Dibujante dibuja al jugador" */
-  if (this.jugador.vidas > 0 && this.juegoIniciado){
+  if (this.jugador.vidas > 0){
   Dibujante.dibujarEntidad(Jugador);
   /* Completar */
 
@@ -317,12 +316,17 @@ Juego.intersecan = function(elemento1, elemento2, x, y) {
     (derecha1 >= izquierda2) && (izquierda1 <= derecha2))
 };
 
+
+
+  //var imagenInicio = function() {
+
+  //}
+
+  
+
 Juego.dibujarFondo = function() {
   // Si se termino el juego hay que mostrar el mensaje de game over de fondo
-  if (!this.juegoIniciado)
-  { Dibujante.dibujarImagen('imagenes/Mensaje1.png', 0, 5, this.anchoCanvas, this.altoCanvas);
-}
-  else if (this.terminoJuego()) {
+  if (this.terminoJuego()) {
     Dibujante.dibujarImagen('imagenes/mensaje_gameover.png', 0, 5, this.anchoCanvas, this.altoCanvas);
     document.getElementById('reiniciar').style.visibility = 'visible';
   }
@@ -368,3 +372,4 @@ document.addEventListener('keydown', function(e) {
 
 
 
+//var canvass = document.getElementsByTagName('canvas');
