@@ -2,11 +2,7 @@
 existentes.
 Le dara ordenes al Dibujante para que dibuje entidades en la pantalla. Cargara
 el mapa, chequeara colisiones entre los objetos y actualizara sus movimientos
-y ataques. Gran parte de su implementacion esta hecha, pero hay espacios con el
-texto COMPLETAR que deben completarse segun lo indique la consigna.
-
-El objeto Juego contiene mucho codigo. Tomate tu tiempo para leerlo tranquilo
-y entender que es lo que hace en cada una de sus partes. */
+y ataques. */
   
 var Juego = {
   // Aca se configura el tamanio del canvas del juego
