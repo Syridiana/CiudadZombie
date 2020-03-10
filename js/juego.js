@@ -15,8 +15,7 @@ var Juego = {
   ganador: false,
 
   obstaculosCarretera: [
-    /*Aca se van a agregar los obstaculos visibles. Tenemos una valla horizontal
-    de ejemplo, pero podras agregar muchos mas. */
+    /*Obstaculos visibles.*/
     new Obstaculo('imagenes/valla_horizontal.png', 100, 370, 30, 30, 1),
     new Obstaculo('imagenes/valla_horizontal.png', 166, 200, 30, 30, 1),
     new Obstaculo('imagenes/valla_horizontal.png', 800, 430, 30, 30, 1),
@@ -44,9 +43,7 @@ var Juego = {
 
 
   ],
-  /* Estos son los bordes con los que se puede chocar, por ejemplo, la vereda.
-   Ya estan ubicados en sus lugares correspondientes. Ya aparecen en el mapa, ya
-   que son invisibles. No tenes que preocuparte por ellos.*/
+  /* Estos son los bordes con los que se puede chocar, por ejemplo, la vereda.*/
   bordes: [
     // // Bordes
     new Obstaculo('', 0, 5, 961, 18, 0),
@@ -79,9 +76,8 @@ var Juego = {
 }
 
 /* Se cargan los recursos de las imagenes, para tener un facil acceso
-a ellos. No hace falta comprender esta parte. Pero si queres agregar tus propies
-imagenes tendras que poner su ruta en la lista para que pueda ser precargada como
-todas las demas. */
+a ellos. */
+
 Juego.iniciarRecursos = function() {
   Resources.load([
     'imagenes/Mensaje1.png',
