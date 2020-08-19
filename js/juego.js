@@ -368,20 +368,20 @@ $(document).ready(function () {
   iniciodos.animate({opacity: '0'}, 5000);
 
   setInterval(inicio, 5000);
-  function inicio() {iniciodos.css("background-image", "url('../recursos-ciudad-zombie/imagenes/Mensaje2.png')")}
+  function inicio() {iniciodos.css("background-image", "url('../imagenes/Mensaje2.png')")}
 
   setInterval(segundaImg,5000);
   function segundaImg() {iniciodos.animate({opacity: '1'}, 4000);}
 
 //Cuenta regresiva
  setInterval(segundaImg3, 10500);
-  function segundaImg3() {iniciodos.css("background-image", "url('../recursos-ciudad-zombie/imagenes/3.png')")}
+  function segundaImg3() {iniciodos.css("background-image", "url('../imagenes/3.png')")}
   
   setInterval(segundaImg2, 11500);
-  function segundaImg2() {iniciodos.css("background-image", "url('../recursos-ciudad-zombie/imagenes/2.png')")}
+  function segundaImg2() {iniciodos.css("background-image", "url('../imagenes/2.png')")}
  
   setInterval(segundaImg1, 12500);
-  function segundaImg1() {iniciodos.css("background-image", "url('../recursos-ciudad-zombie/imagenes/1.png')")}
+  function segundaImg1() {iniciodos.css("background-image", "url('../imagenes/1.png')")}
 
 //Quitamos el div con las imagenes de inicio
   setInterval(borrarInicio, 13500);
