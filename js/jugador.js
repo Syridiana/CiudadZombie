@@ -10,21 +10,15 @@ var Jugador = {
   alto: 30,
   velocidad: 10,
   vidas: 5,
-  mover: function () {
 
-  },
   perderVidas: function (cantVidas) {
     this.vidas -= cantVidas;
 
   },
   
 
-  // Hay que agregar lo que falte al jugador: movimientos, perdida de vidas,
-  // y todo lo que haga falta para que cumpla con sus responsabilidades
+
 
 }
 
-/*imagenes/auto_rojo_abajo.png,
-  imagenes/auto_rojo_arriba.png,
-  imagenes/auto_rojo_derecha.png,
-  imagenes/auto_rojo_izquierda.png, */
+

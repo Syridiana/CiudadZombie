@@ -8,7 +8,7 @@ var ZombieConductor = function(sprite, x, y, ancho, alto, velocidad, rangoMov, d
   /* Completar constructor a partir de Enemigo */
   Enemigo.call(this, sprite, x, y, ancho, alto, velocidad, rangoMov);
   this.direccion = direccion;
-  //Enemigo.call(/* ... */);
+
   /* No olvidar agregar la/s propiedad/es unicas de ZombieConductor necesarias */
 }
 
@@ -34,5 +34,5 @@ ZombieConductor.prototype.mover = function(direccion) {
 
 ZombieConductor.prototype.atacar = function(jugador) {
   jugador.perderVidas(6);
-  }
+}
 

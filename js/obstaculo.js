@@ -8,13 +8,16 @@ var Obstaculo = function (sprite, x, y, ancho, alto, potencia) {
   this.ancho = ancho;
   this.alto = alto;
   this.potencia = potencia;
+  this.chocado = false;
+  /*Los obstaculos pueden ser chocados una sola vez ya que sino
+  seguia sacando vidas al jugador al no soltar la tecla a tiempo y se hacia demasiado dificil el juego*/
   this.chocar = function () {
-  	Jugador.perderVidas(this.potencia);
-  	this.potencia = 0;
-//  		Jugador.vidas -= Potencia;
+  	if(this.chocado == false) {Jugador.perderVidas(this.potencia);
+  	this.potencia = 1;
+    this.chocado = true;
+}
 }
   
 
-  // Implementar el metodo chocar(jugador) para que al chocar con un obstaculo
-  // el jugador pierda vidas
 }
+

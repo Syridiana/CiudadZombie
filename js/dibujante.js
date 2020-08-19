@@ -13,14 +13,14 @@ var Dibujante = {
 
   inicializarCanvas: function (anchoCanvas, altoCanvas) {
     this.canvas.width = anchoCanvas;
-    this.canvas.height = altoCanvas;
+    this.canvas.height = altoCanvas; 
     document.body.insertBefore(this.canvas, document.body.childNodes[0]);
   },
 
   /* Dibuja una imagen a partir de su ruta, en la posicion x, y
   con un ancho y alto dado. Es usada, por ejemplo, para pintar el mapa y los
   carteles de game over.*/
-  dibujarImagen: function (ruta, x, y, ancho, alto) {
+  dibujarImagen: function (ruta, x, y, ancho, alto) { 
     var imagen = Resources.get(ruta);
     this.canvas.getContext('2d').drawImage(imagen, x, y, ancho, alto);
   },
